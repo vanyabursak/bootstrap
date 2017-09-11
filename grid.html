@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css" >
+    <link rel="stylesheet" href="css/main.css" >
+</head>
+<body>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
+
+
+<!--Равные ширины
+Например, вот два макета сетки,
+которые применяются к каждому устройству и окну просмотра,
+от xs до xl. Добавьте любое количество единиц без единицы для каждой точки останова,
+ которая вам нужна, и каждый столбец будет иметь одинаковую ширину.
+-->
+<div class="container">
+<div class="row">
+    <div class="col">
+        1 of 2
+    </div>
+    <div class="col">
+        2 of 2
+    </div>
+</div>
+<div class="row">
+    <div class="col">
+        1 of 3
+    </div>
+    <div class="col">
+        2 of 3
+    </div>
+    <div class="col">
+        3 of 3
+    </div>
+</div>
+</div>
+
+<!--Столбцы с равной шириной могут быть разбиты на несколько строк,
+но есть ошибка Safari flexbox, которая мешает этому работать без
+явной гибкой основы или границы. Наш пример работает благодаря установке границы;
+вы можете сделать то же самое с .col {border: 1px solid transparent; }.
+В качестве альтернативы вы можете установить гибкую основу в ширину столбца
+(например, .col {flex: 1 0 50%;}).
+Оба этих исправления были задокументированы в сокращенном тестовом примере вне Bootstrap.-->
+<div class="container">
+    <div class="row">
+        <div class="col">Column</div>
+        <div class="col">Column</div>
+        <div class="w-100"></div>
+        <div class="col">Column</div>
+        <div class="col">Column</div>
+        <div class="col">Column</div>
+        <div class="col">Column</div>
+    </div>
+</div>
+
+
+<!--Установка ширины столбца
+Автоматическая компоновка для столбцов сетки flexbox также означает,
+что вы можете установить ширину одного столбца и автоматически изменить
+ размер столбцов для столбцов.
+Вы можете использовать предопределенные классы сетки (как показано ниже),
+grid mixins или inline widths.Обратите внимание,
+что другие столбцы будут изменять размер независимо от ширины центрального столбца.-->
+<div class="container">
+    <div class="row">
+        <div class="col">
+            1 of 3
+        </div>
+        <div class="col-6">
+            2 of 3 (wider)
+        </div>
+        <div class="col">
+            3 of 3
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            1 of 3
+        </div>
+        <div class="col-5">
+            2 of 3 (wider)
+        </div>
+        <div class="col">
+            3 of 3
+        </div>
+    </div>
+</div>
+
+
+<!--Содержимое переменной ширины
+Используйте классы col-{breakpoint} -auto для сортировки столбцов на основе
+ естественной ширины их содержимого.-->
+<div class="container">
+    <div class="row justify-content-md-center">
+        <div class="col col-lg-2">
+            1 of 3
+        </div>
+        <div class="col-md-auto">
+            Variable width content
+        </div>
+        <div class="col col-lg-2">
+            3 of 3
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            1 of 3
+        </div>
+        <div class="col auto">
+            Variable width content
+        </div>
+        <div class="col col-lg-2">
+            3 of 3
+        </div>
+    </div>
+</div>
+
+
+<!--Множественная многоуровневая ширина
+Создайте столбцы равной ширины, которые охватывают несколько строк,
+ вставив .w-100, где вы хотите,
+ чтобы столбцы разбивались на новую строку.
+  Сделайте перерывы отзывчивыми, смешав .w-100
+   с некоторыми отзывчивыми утилитами отображения.-->
+<div class="row">
+    <div class="col">col</div>
+    <div class="col">col</div>
+    <div class="w-100"></div>
+    <div class="col">col</div>
+    <div class="col">col</div>
+</div>
+
+
+<!--
+Ответственные классы
+В сетку Bootstrap входят пять уровней предопределенных классов для построения
+сложных адаптивных макетов. Настройте размер ваших колонок на дополнительных маленьких,
+ малых, средних, больших или дополнительных больших устройствах, как вы считаете нужным.
+
+Все точки останова
+Для сеток, которые одинаковы от самых маленьких до самых больших, используйте классы
+.col и .col- *. Укажите нумерованный класс, если вам нужен столбец особого размера;
+ в противном случае, не стесняйтесь придерживаться .col.
+-->
+
+
+<div class="row">
+    <div class="col">col</div>
+    <div class="col">col</div>
+    <div class="col">col</div>
+    <div class="col">col</div>
+</div>
+<div class="row">
+    <div class="col-8">col-8</div>
+    <div class="col-4">col-4</div>
+</div>
+
+
+<!--Сложен в горизонтальное положение
+Используя один набор классов .col-sm- *,
+ вы можете создать базовую сетчатую систему,
+ которая начинается с укладки на дополнительных небольших устройствах,
+ прежде чем становиться горизонтальной на настольных (средних) устройствах.-->
+<div class="row">
+    <div class="col-sm-8">col-sm-8</div>
+    <div class="col-sm-4">col-sm-4</div>
+</div>
+<div class="row">
+    <div class="col-sm">col-sm</div>
+    <div class="col-sm">col-sm</div>
+    <div class="col-sm">col-sm</div>
+</div>
+
+<!--центровка
+Используйте утилиты выравнивания flexbox для вертикального и горизонтального выравнивания столбцов.
+Вертикальное выравнивание-->
+<div class="container">
+    <div class="row align-items-start">
+        <div class="col">
+            One of three columns
+        </div>
+        <div class="col">
+            One of three columns
+        </div>
+        <div class="col">
+            One of three columns
+        </div>
+    </div>
+    <div class="row align-items-center">
+        <div class="col">
+            One of three columns
+        </div>
+        <div class="col">
+            One of three columns
+        </div>
+        <div class="col">
+            One of three columns
+        </div>
+    </div>
+    <div class="row align-items-end">
+        <div class="col">
+            One of three columns
+        </div>
+        <div class="col">
+            One of three columns
+        </div>
+        <div class="col">
+            One of three columns
+        </div>
+    </div>
+</div>
+
+
+<!--Горизонтальное выравнивание-->
+<div class="container">
+    <div class="row justify-content-start">
+        <div class="col-4">
+            One of two columns
+        </div>
+        <div class="col-4">
+            One of two columns
+        </div>
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-4">
+            One of two columns
+        </div>
+        <div class="col-4">
+            One of two columns
+        </div>
+    </div>
+    <div class="row justify-content-end">
+        <div class="col-4">
+            One of two columns
+        </div>
+        <div class="col-4">
+            One of two columns
+        </div>
+    </div>
+    <div class="row justify-content-around">
+        <div class="col-4">
+            One of two columns
+        </div>
+        <div class="col-4">
+            One of two columns
+        </div>
+    </div>
+    <div class="row justify-content-between">
+        <div class="col-4">
+            One of two columns
+        </div>
+        <div class="col-4">
+            One of two columns
+        </div>
+    </div>
+</div>
+
+<!--Сброс столбцов
+При наличии нескольких ячеек сетки вы должны столкнуться с проблемами,
+ когда в определенных точках прерывания ваши столбцы не совсем корректны,
+  так как один выше другого. Чтобы исправить это, используйте комбинацию
+   .clearfix и наших гибких утилитов отображен-->
+<div class="row">
+    <div class="col-6 col-sm-3">.col-6 .col-sm-3</div>
+    <div class="col-6 col-sm-3">.col-6 .col-sm-3</div>
+
+    <!-- Add the extra clearfix for only the required viewport -->
+    <div class="clearfix d-none d-sm-block"></div>
+
+    <div class="col-6 col-sm-3">.col-6 .col-sm-3</div>
+    <div class="col-6 col-sm-3">.col-6 .col-sm-3</div>
+</div>
+
+
+<!--
+Изменение порядка
+Заказ Flex
+Используйте .order-классы для управления визуальным порядком вашего контента.
+ Эти классы реагируют, поэтому вы можете установить порядок с помощью точки останова
+  (например, .order-1.order-md-2).
+  Включает поддержку от 1 до 12 через все пять уровней сетки.-->
+<div class="container">
+<div class="row">
+    <div class="col">
+        First, but unordered
+    </div>
+    <div class="col order-12">
+        Second, but last
+    </div>
+    <div class="col order-1">
+        Third, but first
+    </div>
+</div>
+</div>
+
+<!--Смещение столбцов
+С переходом на flexbox в v4 у нас больше нет стиля смещенных классов v3.
+ Вместо этого используйте утилиты margin, такие как .mr-auto,
+ чтобы отделить друг от друга столбцы.-->
+<div class="row">
+    <div class="col-md-4">.col-md-4</div>
+    <div class="col-md-4 ml-auto">.col-md-4 .ml-auto</div>
+</div>
+<div class="row">
+    <div class="col-md-3 ml-md-auto">.col-md-3 .ml-md-auto</div>
+    <div class="col-md-3 ml-md-auto">.col-md-3 .ml-md-auto</div>
+</div>
+<div class="row">
+    <div class="col-auto mr-auto">.col-auto .mr-auto</div>
+    <div class="col-auto">.col-auto</div>
+</div>
+
+
+<!--Чтобы вложить содержимое в сетку по умолчанию, добавьте новый
+.row и набор столбцов .col-sm- * в существующий столбец .col-sm- *.
+ Вложенные строки должны включать в себя набор столбцов,
+  которые составляют до 12 или менее
+   (не требуется, чтобы вы использовали все 12 доступных столбцов).-->
+<div class="row">
+    <div class="col-sm-9">
+        Level 1: .col-sm-9
+        <div class="row">
+            <div class="col-8 col-sm-6">
+                Level 2: .col-8 .col-sm-6
+            </div>
+            <div class="col-4 col-sm-6">
+                Level 2: .col-4 .col-sm-6
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Optional JavaScript -->
+
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+</body>
+</html>
