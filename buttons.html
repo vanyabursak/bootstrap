@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>buttons</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css" >
+    <link rel="stylesheet" href="css/main.css" >
+</head>
+<body>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
+
+<!--Примеры
+Bootstrap включает в себя несколько предопределенных стилей кнопок,
+каждая из которых выполняет свою собственную семантическую цель,
+с несколькими дополнительными функциями,
+ которые были добавлены для большего контроля.-->
+<button type="button" class="btn btn-primary">Primary</button>
+<button type="button" class="btn btn-secondary">Secondary</button>
+<button type="button" class="btn btn-success">Success</button>
+<button type="button" class="btn btn-danger">Danger</button>
+<button type="button" class="btn btn-warning">Warning</button>
+<button type="button" class="btn btn-info">Info</button>
+<button type="button" class="btn btn-light">Light</button>
+<button type="button" class="btn btn-dark">Dark</button>
+<button type="button" class="btn btn-link">Link</button>
+
+
+<!--Теги кнопок
+Эти .btnклассы предназначены для использования с <button>элементом. Однако вы также
+можете использовать эти классы <a>или <input>элементы
+(хотя некоторые браузеры могут применять несколько иной рендеринг).
+
+При использовании классов кнопок для <a>элементов, которые используются для
+запуска функциональных возможностей на странице
+(например, для свертывания содержимого), а не для привязки к новым страницам
+или разделам на текущей странице, эти ссылки должны быть предоставлены,
+role="button"чтобы соответствующим образом передать
+свою цель вспомогательным технологиям, таким как читателей экрана.-->
+<a class="btn btn-primary" href="#" role="button">Link</a>
+<button class="btn btn-primary" type="submit">Button</button>
+<input class="btn btn-primary" type="button" value="Input">
+<input class="btn btn-primary" type="submit" value="Submit">
+<input class="btn btn-primary" type="reset" value="Reset">
+
+
+<!--Кнопки контура
+Нуждаетесь в кнопке, но не из-за огромных цветов фона, которые они приносят?
+ Замените классы модификатора по умолчанию на .btn-outline-*те, которые удаляют
+ все фоновые изображения и цвета на любой кнопке.-->
+<button type="button" class="btn btn-outline-primary">Primary</button>
+<button type="button" class="btn btn-outline-secondary">Secondary</button>
+<button type="button" class="btn btn-outline-success">Success</button>
+<button type="button" class="btn btn-outline-danger">Danger</button>
+<button type="button" class="btn btn-outline-warning">Warning</button>
+<button type="button" class="btn btn-outline-info">Info</button>
+<button type="button" class="btn btn-outline-light">Light</button>
+<button type="button" class="btn btn-outline-dark">Dark</button>
+
+
+<!--Размеры
+Необычные большие или меньшие кнопки?
+Добавьте .btn-lgили .btn-smдля дополнительных размеров.-->
+<button type="button" class="btn btn-primary btn-lg">Large button</button>
+<button type="button" class="btn btn-secondary btn-lg">Large button</button>
+<!--маленькая кнопка-->
+<button type="button" class="btn btn-primary btn-sm">Small button</button>
+<button type="button" class="btn btn-secondary btn-sm">Small button</button>
+
+
+<!--Создайте кнопки уровня блока - те,
+ которые охватывают всю ширину родительского элемента путем добавления .btn-block.-->
+<button type="button" class="btn btn-primary btn-lg btn-block">Block level button</button>
+<button type="button" class="btn btn-secondary btn-lg btn-block">Block level button</button>
+
+
+<!--Активное состояние
+Кнопки будут отображаться нажатыми (с более темным фоном, более темной рамкой
+и вставкой) при активном нажатии. Нет необходимости добавлять класс в <button>s,
+поскольку они используют псевдокласс . Тем не менее, вы все равно можете заставить
+ один и тот же активный внешний вид с .active(и включать aria-pressed="true"атрибут),
+ если вам нужно реплицировать состояние программно.-->
+<a href="#" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Primary link</a>
+<a href="#" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true">Link</a>
+
+
+<!--Отключено состояние
+Сделать кнопки выглядят неактивными,
+ добавляя disabledатрибут boolean к любому <button>элементу.-->
+<button type="button" class="btn btn-lg btn-primary" disabled>Primary button</button>
+<button type="button" class="btn btn-secondary btn-lg" disabled>Button</button>
+
+
+<!--Отключенные кнопки с использованием <a>элемента ведут себя несколько иначе:
+
+<a>s не поддерживают disabledатрибут, поэтому вы должны добавить .disabledкласс,
+ чтобы он визуально отображался как отключенный.
+Для включения всех pointer-eventsкнопок на якоре включены некоторые будущие стили .
+ В браузерах, которые поддерживают это свойство,
+  вы вообще не увидите курсор с отключенным.
+Отключенные кнопки должны включать aria-disabled="true"атрибут,
+ указывающий состояние элемента на вспомогательные технологии.-->
+<a href="#" class="btn btn-primary btn-lg disabled" role="button" aria-disabled="true">Primary link</a>
+<a href="#" class="btn btn-secondary btn-lg disabled" role="button" aria-disabled="true">Link</a>
+
+
+<!--Флажок и переключатели
+.buttonСтили Bootstrap могут быть применены к другим элементам, таким как <label>s,
+ для переключения кнопок или кнопок стиля радио. Добавьте data-toggle="buttons"к
+ .btn-groupэтим модифицированным кнопкам, чтобы включить их в соответствующие стили.
+
+Проверенное состояние для этих кнопок обновляется только через clickсобытие на кнопке.
+ Если вы используете другой метод для обновления ввода-например,
+  с помощью <input type="reset">или вручную применения на вход в
+  checkedсвойства-вы будете необходимости переключения .activeна <label>ручной.
+
+Обратите внимание, что кнопки с предварительной проверкой требуют,
+чтобы вы вручную добавили .activeкласс к входным данным <label>.-->
+<div class="btn-group" data-toggle="buttons">
+    <label class="btn btn-secondary active">
+        <input type="checkbox" checked autocomplete="off"> Checkbox 1 (pre-checked)
+    </label>
+    <label class="btn btn-secondary">
+        <input type="checkbox" autocomplete="off"> Checkbox 2
+    </label>
+    <label class="btn btn-secondary">
+        <input type="checkbox" autocomplete="off"> Checkbox 3
+    </label>
+</div>
+<!--радио-->
+<div class="btn-group" data-toggle="buttons">
+    <label class="btn btn-secondary active">
+        <input type="radio" name="options" id="option1" autocomplete="off" checked> Radio 1 (preselected)
+    </label>
+    <label class="btn btn-secondary">
+        <input type="radio" name="options" id="option2" autocomplete="off"> Radio 2
+    </label>
+    <label class="btn btn-secondary">
+        <input type="radio" name="options" id="option3" autocomplete="off"> Radio 3
+    </label>
+</div>
+</body>
+</html>

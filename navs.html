@@ -19,7 +19,6 @@
 что этот конкретный класс не вызывает никакого специального стиля.-->
 
 <ul class="nav">
-
     <li class="nav-item">
         <a class="nav-link active" href="#">Active</a>
     </li>
@@ -33,6 +32,8 @@
         <a class="nav-link disabled" href="#">Disabled</a>
     </li>
 </ul>
+
+
 <!--Классы используются повсюду, поэтому ваша разметка может быть супер гибкой.
 Используйте <ul>s, как показано выше, или сканируйте свой собственный <nav>элемент.
 Поскольку .navиспользование display: flex, навигационные ссылки ведут себя так же,
@@ -43,6 +44,8 @@
     <a class="nav-link" href="#">Link</a>
     <a class="nav-link disabled" href="#">Disabled</a>
 </nav>
+
+
 <!--Горизонтальное выравнивание
 Измените горизонтальное выравнивание вашего навигатора с помощью утилит flexbox .
  По умолчанию навигаторы выровнены по левому краю,
@@ -62,6 +65,8 @@
         <a class="nav-link disabled" href="#">Disabled</a>
     </li>
 </ul>
+
+
 <!--Выравнивание по правому краю .justify-content-end:-->
 <ul class="nav justify-content-end">
     <li class="nav-item">
@@ -77,6 +82,8 @@
         <a class="nav-link disabled" href="#">Disabled</a>
     </li>
 </ul>
+
+
 <!--вертикальный
 Уложите навигацию, изменив направление гибкого элемента с помощью .flex-columnутилиты.
  Нужно укладывать их в некоторые видовые экраны, но не в другие?
@@ -103,6 +110,7 @@
     <a class="nav-link disabled" href="#">Disabled</a>
 </nav>
 
+
 <!--Вкладки
 Принимает базовый навигатор сверху и добавляет .nav-tabsкласс для
 создания интерфейса с вкладками. Используйте их для создания областей с
@@ -122,6 +130,7 @@
     </li>
 </ul>
 
+
 <!--Таблетки
 Возьмите тот же HTML-код, но .nav-pillsвместо этого используйте :-->
 <ul class="nav nav-pills">
@@ -138,6 +147,7 @@
         <a class="nav-link disabled" href="#">Disabled</a>
     </li>
 </ul>
+
 
 <!--Заполнить и обосновать
 Заставьте свое .navсодержимое расширить всю доступную ширину одного
@@ -160,6 +170,7 @@
     </li>
 </ul>
 
+
 <!--При использовании <nav>навигации,
  основанной на использовании, обязательно указывайте .nav-itemна якоря.-->
 <nav class="nav nav-pills nav-fill">
@@ -168,6 +179,8 @@
     <a class="nav-item nav-link" href="#">Link</a>
     <a class="nav-item nav-link disabled" href="#">Disabled</a>
 </nav>
+
+
 <!--Для элементов с равной шириной используйте .nav-justified.
 Все горизонтальные пространства будут заняты навигационными ссылками, но,
 в отличие от .nav-fillвышеизложенного, каждый элемент навигации будет иметь
@@ -188,6 +201,7 @@
     <a class="nav-item nav-link disabled" href="#">Disabled</a>
 </nav>
 
+
 <!--Работа с гибкими утилитами
 Если вам нужны адаптивные варианты навигации, рассмотрите возможность использования
 ряда утилит flexbox . В то время как более подробные, эти утилиты предлагают большую
@@ -200,6 +214,8 @@
     <a class="flex-sm-fill text-sm-center nav-link" href="#">Link</a>
     <a class="flex-sm-fill text-sm-center nav-link disabled" href="#">Disabled</a>
 </nav>
+
+
 <!--Использование выпадающих меню
 Добавьте выпадающие меню с небольшим дополнительным HTML и выпадающим меню JavaScript .
 
@@ -247,6 +263,8 @@
         <a class="nav-link disabled" href="#">Disabled</a>
     </li>
 </ul>
+
+
 <!--Поведение JavaScript
 Используйте плагин на вкладке JavaScript - включите его отдельно или через
 скомпилированный bootstrap.jsфайл - чтобы расширить
@@ -255,7 +273,7 @@
 
 Динамические вкладками интерфейсы, как описано в WAI ARIA Authoring практике , требуют role="tablist", role="tab", role="tabpanel", и дополнительные aria-атрибуты для того , чтобы передать их структуру, функциональность и текущее состояние
  пользователей вспомогательных технологий (например, для чтения с экрана).-->
-<ul class="nav nav-tabs"  role="tablist">
+<ul class="nav nav-tabs" id="myTab" role="tablist">
     <li class="nav-item">
         <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-expanded="true">Home</a>
     </li>
