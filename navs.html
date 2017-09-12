@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Navs</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css" >
+    <link rel="stylesheet" href="css/main.css" >
+</head>
+<body>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
+
+<!--Базовый .navкомпонент не содержит никакого .activeсостояния.
+Следующие примеры включают класс, в основном для демонстрации того,
+что этот конкретный класс не вызывает никакого специального стиля.-->
+
+<ul class="nav">
+
+    <li class="nav-item">
+        <a class="nav-link active" href="#">Active</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link disabled" href="#">Disabled</a>
+    </li>
+</ul>
+<!--Классы используются повсюду, поэтому ваша разметка может быть супер гибкой.
+Используйте <ul>s, как показано выше, или сканируйте свой собственный <nav>элемент.
+Поскольку .navиспользование display: flex, навигационные ссылки ведут себя так же,
+как и элементы навигации, но без дополнительной разметки.-->
+<nav class="nav">
+    <a class="nav-link active" href="#">Active</a>
+    <a class="nav-link" href="#">Link</a>
+    <a class="nav-link" href="#">Link</a>
+    <a class="nav-link disabled" href="#">Disabled</a>
+</nav>
+<!--Горизонтальное выравнивание
+Измените горизонтальное выравнивание вашего навигатора с помощью утилит flexbox .
+ По умолчанию навигаторы выровнены по левому краю,
+ но вы можете легко изменить их на выравнивание по центру или по правому краю.
+В центре .justify-content-center:-->
+<ul class="nav justify-content-center">
+    <li class="nav-item">
+        <a class="nav-link active" href="#">Active</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link disabled" href="#">Disabled</a>
+    </li>
+</ul>
+<!--Выравнивание по правому краю .justify-content-end:-->
+<ul class="nav justify-content-end">
+    <li class="nav-item">
+        <a class="nav-link active" href="#">Active</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link disabled" href="#">Disabled</a>
+    </li>
+</ul>
+<!--вертикальный
+Уложите навигацию, изменив направление гибкого элемента с помощью .flex-columnутилиты.
+ Нужно укладывать их в некоторые видовые экраны, но не в другие?
+ Используйте отзывчивые версии (например, .flex-sm-column).-->
+<ul class="nav flex-column">
+    <li class="nav-item">
+        <a class="nav-link active" href="#">Active</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link disabled" href="#">Disabled</a>
+    </li>
+</ul>
+<!--Как всегда, вертикальная навигация возможна и без <ul>s.-->
+<nav class="nav flex-column">
+    <a class="nav-link active" href="#">Active</a>
+    <a class="nav-link" href="#">Link</a>
+    <a class="nav-link" href="#">Link</a>
+    <a class="nav-link disabled" href="#">Disabled</a>
+</nav>
+
+<!--Вкладки
+Принимает базовый навигатор сверху и добавляет .nav-tabsкласс для
+создания интерфейса с вкладками. Используйте их для создания областей с
+вкладками с нашим плагином на вкладке JavaScript .-->
+<ul class="nav nav-tabs">
+    <li class="nav-item">
+        <a class="nav-link active" href="#">Active</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link disabled" href="#">Disabled</a>
+    </li>
+</ul>
+
+<!--Таблетки
+Возьмите тот же HTML-код, но .nav-pillsвместо этого используйте :-->
+<ul class="nav nav-pills">
+    <li class="nav-item">
+        <a class="nav-link active" href="#">Active</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link disabled" href="#">Disabled</a>
+    </li>
+</ul>
+
+<!--Заполнить и обосновать
+Заставьте свое .navсодержимое расширить всю доступную ширину одного
+из двух классов-модификаторов. Для пропорционального заполнения всего
+доступного пространства используйте .nav-items .nav-fill. Обратите внимание,
+что все горизонтальное пространство занято,
+ но не каждый навигационный элемент имеет одинаковую ширину.-->
+<ul class="nav nav-pills nav-fill">
+    <li class="nav-item">
+        <a class="nav-link active" href="#">Active</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="#">Longer nav link</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link disabled" href="#">Disabled</a>
+    </li>
+</ul>
+
+<!--При использовании <nav>навигации,
+ основанной на использовании, обязательно указывайте .nav-itemна якоря.-->
+<nav class="nav nav-pills nav-fill">
+    <a class="nav-item nav-link active" href="#">Active</a>
+    <a class="nav-item nav-link" href="#">Link</a>
+    <a class="nav-item nav-link" href="#">Link</a>
+    <a class="nav-item nav-link disabled" href="#">Disabled</a>
+</nav>
+<!--Для элементов с равной шириной используйте .nav-justified.
+Все горизонтальные пространства будут заняты навигационными ссылками, но,
+в отличие от .nav-fillвышеизложенного, каждый элемент навигации будет иметь
+одинаковую ширину.
+-->
+<nav class="nav nav-pills nav-justified">
+    <a class="nav-link active" href="#">Active</a>
+    <a class="nav-link" href="#">Longer nav link</a>
+    <a class="nav-link" href="#">Link</a>
+    <a class="nav-link disabled" href="#">Disabled</a>
+</nav>
+<!--Как и в .nav-fillпримере с использованием
+ <nav>навигации на основе, обязательно включите .nav-itemна якоря.-->
+<nav class="nav nav-pills nav-justified">
+    <a class="nav-item nav-link active" href="#">Active</a>
+    <a class="nav-item nav-link" href="#">Link</a>
+    <a class="nav-item nav-link" href="#">Link</a>
+    <a class="nav-item nav-link disabled" href="#">Disabled</a>
+</nav>
+
+<!--Работа с гибкими утилитами
+Если вам нужны адаптивные варианты навигации, рассмотрите возможность использования
+ряда утилит flexbox . В то время как более подробные, эти утилиты предлагают большую
+настройку в ответных контрольных точках. В приведенном ниже примере наш навигатор
+будет уложен на самую низкую точку останова, а затем адаптируется к горизонтальной компоновке,
+ которая заполняет доступную ширину, начиная с небольшой точки останова.-->
+<nav class="nav nav-pills flex-column flex-sm-row">
+    <a class="flex-sm-fill text-sm-center nav-link active" href="#">Active</a>
+    <a class="flex-sm-fill text-sm-center nav-link" href="#">Link</a>
+    <a class="flex-sm-fill text-sm-center nav-link" href="#">Link</a>
+    <a class="flex-sm-fill text-sm-center nav-link disabled" href="#">Disabled</a>
+</nav>
+<!--Использование выпадающих меню
+Добавьте выпадающие меню с небольшим дополнительным HTML и выпадающим меню JavaScript .
+
+Вкладки с выпадающими списками-->
+<ul class="nav nav-tabs">
+    <li class="nav-item">
+        <a class="nav-link active" href="#">Active</a>
+    </li>
+    <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+        <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item" href="#">Something else here</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Separated link</a>
+        </div>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link disabled" href="#">Disabled</a>
+    </li>
+</ul>
+<!--Таблетки с выпадающими списками-->
+<ul class="nav nav-pills">
+    <li class="nav-item">
+        <a class="nav-link active" href="#">Active</a>
+    </li>
+    <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+        <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item" href="#">Something else here</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Separated link</a>
+        </div>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link disabled" href="#">Disabled</a>
+    </li>
+</ul>
+<!--Поведение JavaScript
+Используйте плагин на вкладке JavaScript - включите его отдельно или через
+скомпилированный bootstrap.jsфайл - чтобы расширить
+ наши навигационные вкладки и пилюли, чтобы создавать вкладки с локальным содержимым,
+  даже с помощью выпадающих меню.
+
+Динамические вкладками интерфейсы, как описано в WAI ARIA Authoring практике , требуют role="tablist", role="tab", role="tabpanel", и дополнительные aria-атрибуты для того , чтобы передать их структуру, функциональность и текущее состояние
+ пользователей вспомогательных технологий (например, для чтения с экрана).-->
+<ul class="nav nav-tabs"  role="tablist">
+    <li class="nav-item">
+        <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-expanded="true">Home</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile">Profile</a>
+    </li>
+    <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+            Dropdown
+        </a>
+        <div class="dropdown-menu">
+            <a class="dropdown-item" id="dropdown1-tab" href="#dropdown1" role="tab" data-toggle="tab" aria-controls="dropdown1">@fat</a>
+            <a class="dropdown-item" id="dropdown2-tab" href="#dropdown2" role="tab" data-toggle="tab" aria-controls="dropdown2">@mdo</a>
+        </div>
+    </li>
+</ul>
+<div class="tab-content" id="myTabContent">
+    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">...</div>
+    <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">...</div>
+    <div class="tab-pane fade" id="dropdown1" role="tabpanel" aria-labelledby="dropdown1-tab">...</div>
+    <div class="tab-pane fade" id="dropdown2" role="tabpanel" aria-labelledby="dropdown2-tab">...</div>
+</div>
+<!--Чтобы соответствовать вашим потребностям, это работает с <ul>разметкой на основе, как показано выше,
+ а также с <nav>разметкой на основе, показанной ниже.-->
+<nav class="nav nav-tabs" id="myTab" role="tablist">
+    <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-expanded="true">Home</a>
+    <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile">Profile</a>
+    <div class="dropdown">
+        <a class="nav-item nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+            Dropdown
+        </a>
+        <div class="dropdown-menu">
+            <a class="dropdown-item" id="nav-dropdown1-tab" href="#nav-dropdown1" role="tab" data-toggle="tab" aria-controls="nav-dropdown1">@fat</a>
+            <a class="dropdown-item" id="nav-dropdown2-tab" href="#nav-dropdown2" role="tab" data-toggle="tab" aria-controls="nav-dropdown2">@mdo</a>
+        </div>
+    </div>
+</nav>
+<div class="tab-content" id="nav-tabContent">
+    <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">...</div>
+    <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">...</div>
+    <div class="tab-pane fade" id="nav-dropdown1" role="tabpanel" aria-labelledby="nav-dropdown1-tab">...</div>
+    <div class="tab-pane fade" id="nav-dropdown2" role="tabpanel" aria-labelledby="nav-dropdown2-tab">...</div>
+</div>
+<!--Плагин tabs также работает с таблетками.-->
+<ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+    <li class="nav-item">
+        <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-expanded="true">Home</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-expanded="true">Profile</a>
+    </li>
+    <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+        <div class="dropdown-menu">
+            <a class="dropdown-item" id="pills-dropdown1-tab" href="#pills-dropdown1" role="tab" data-toggle="pill" aria-controls="pills-dropdown1">@fat</a>
+            <a class="dropdown-item" id="pills-dropdown2-tab" href="#pills-dropdown2" role="tab" data-toggle="pill" aria-controls="pills-dropdown2">@mdo</a>
+        </div>
+    </li>
+</ul>
+<div class="tab-content" id="pills-tabContent">
+    <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">...</div>
+    <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">...</div>
+    <div class="tab-pane fade" id="pills-dropdown1" role="tabpanel" aria-labelledby="pills-dropdown1-tab">...</div>
+    <div class="tab-pane fade" id="pills-dropdown2" role="tabpanel" aria-labelledby="pills-dropdown2-tab">...</div>
+</div>
+<!--И с вертикальными таблетками.-->
+<div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist">
+    <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-expanded="true">Home</a>
+    <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-expanded="true">Profile</a>
+    <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-expanded="true">Messages</a>
+    <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-expanded="true">Settings</a>
+</div>
+<div class="tab-content" id="v-pills-tabContent">
+    <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">...</div>
+    <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">...</div>
+    <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">...</div>
+    <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">...</div>
+</div>
+</body>
+</html>
