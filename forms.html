@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Navs</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css" >
+</head>
+<body>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
+<!--Контроль формы
+Элементы текстовой формы, такие как <input>s, <select>s и <textarea>s, оформляются .form-controlклассом. Включены стили для общего внешнего вида, состояния фокусировки, размера и т. Д.
+
+Обязательно изучите наши пользовательские формы для дальнейшего стиля <select>.-->
+<form>
+    <div class="form-group">
+        <label for="exampleFormControlInput1">Email address</label>
+        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+    </div>
+    <div class="form-group">
+        <label for="exampleFormControlSelect1">Example select</label>
+        <select class="form-control" id="exampleFormControlSelect1">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="exampleFormControlSelect2">Example multiple select</label>
+        <select multiple class="form-control" id="exampleFormControlSelect2">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="exampleFormControlTextarea1">Example textarea</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+    </div>
+</form>
+
+
+<!--Для входных файлов замените .form-controlfor .form-control-file.-->
+<form>
+    <div class="form-group">
+        <label for="exampleFormControlFile1">Example file input</label>
+        <input type="file" class="form-control-file" id="exampleFormControlFile1">
+    </div>
+</form>
+
+<!--Определение размеров
+Установите высоты с помощью классов, подобных .form-control-lgи .form-control-sm.-->
+
+<input class="form-control form-control-lg" type="text" placeholder=".form-control-lg">
+<input class="form-control" type="text" placeholder="Default input">
+<input class="form-control form-control-sm" type="text" placeholder=".form-control-sm">
+
+<!--випадающее по размерам-->
+<select class="form-control form-control-lg">
+    <option>Large select</option>
+</select>
+<select class="form-control">
+    <option>Default select</option>
+</select>
+<select class="form-control form-control-sm">
+    <option>Small select</option>
+</select>
+
+<!--Readonly
+Добавьте readonlyлогический атрибут на вход, чтобы предотвратить
+изменение значения ввода. Входы, доступные только для чтения,
+ выглядят светлее (как и отключенные входы),
+ но сохраняют стандартный курсор.-->
+<input class="form-control" type="text" placeholder="Readonly input here…" readonly>
+
+<!--Чтение простого текста
+Если вы хотите иметь <input readonly>элементы в своей форме в виде обычного текста,
+ используйте .form-control-plaintextкласс для удаления
+ стиля поля формы по умолчанию и сохранения правильного поля и отступов.-->
+<form>
+    <div class="form-group row">
+        <label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
+        <div class="col-sm-10">
+            <input type="text" readonly class="form-control-plaintext" id="staticEmail" value="email@example.com">
+        </div>
+    </div>
+    <div class="form-group row">
+        <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
+        <div class="col-sm-10">
+            <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+        </div>
+    </div>
+</form>
+
+<!--Флажки и радиоприемники
+По умолчанию галочки и радиоприемники улучшены с помощью .form-check,
+одного класса для обоих типов ввода , которые улучшают внешний вид
+ и поведение их HTML - элементов . Флажки предназначены для выбора
+ одного или нескольких параметров в списке, в то время как радиоприемники
+ выбирают один вариант из многих.
+
+Отключенные флажки и радиоприемники поддерживаются, но для указания
+not-allowedкурсора на наведение родителя <label>вам нужно добавить .disabledкласс
+ к родительскому .form-check. Класс disabled также облегчит цвет текста,
+чтобы указать состояние входа.
+
+По умолчанию (сложены)
+По умолчанию любое количество флажков и радиостанций,
+которые являются непосредственными родственниками, будет располагаться
+вертикально и соответствующим образом распределено .form-check.-->
+<div class="form-check">
+    <label class="form-check-label">
+        <input class="form-check-input" type="checkbox" value="">
+        Option one is this and that&mdash;be sure to include why it's great
+    </label>
+</div>
+<div class="form-check disabled">
+    <label class="form-check-label">
+        <input class="form-check-input" type="checkbox" value="" disabled>
+        Option two is disabled
+    </label>
+</div>
+
+<!--В очереди
+Группируйте флажки или радиоприемники в одной и той же горизонтальной строке,
+ добавляя .form-check-inlineк любому .form-check.-->
+<div class="form-check form-check-inline">
+    <label class="form-check-label">
+        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1"> 1
+    </label>
+</div>
+<div class="form-check form-check-inline">
+    <label class="form-check-label">
+        <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2"> 2
+    </label>
+</div>
+<div class="form-check form-check-inline disabled">
+    <label class="form-check-label">
+        <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3" disabled> 3
+    </label>
+</div>
+
+<!--раскладка
+Поскольку Bootstrap применяется display: blockи width: 100%почти ко всем нашим элементам формы, формы будут по умолчанию стек вертикально. Дополнительные классы могут использоваться для изменения этого макета на основе каждой формы.
+
+Группы форм
+.form-groupКласс является самым простым способом , чтобы добавить структуру форм. Его единственная цель - обеспечить поддержку margin-bottomярлыка и управления. В качестве бонуса, так как это класс, вы можете использовать его с <fieldset>s,
+<div>s или почти любым другим элементом.-->
+<form>
+    <div class="form-group">
+        <label class="form-control-label" for="formGroupExampleInput">Example label</label>
+        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Example input">
+    </div>
+    <div class="form-group">
+        <label class="form-control-label" for="formGroupExampleInput2">Another label</label>
+        <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Another input">
+    </div>
+</form>
+
+<!--Сетка формы
+Более сложные формы могут быть построены с использованием наших классов сетки.
+Используйте их для макетов форм, которые требуют нескольких столбцов,
+ различной ширины и дополнительных параметров выравнивания.-->
+<form>
+    <div class="row">
+        <div class="col">
+            <input type="text" class="form-control" placeholder="First name">
+        </div>
+        <div class="col">
+            <input type="text" class="form-control" placeholder="Last name">
+        </div>
+    </div>
+</form>
+<!--Более сложные макеты также могут быть созданы с помощью сетки.-->
+<form>
+    <div class="form-row">
+        <div class="form-group col-md-6">
+            <label for="inputEmail4" class="col-form-label">Email</label>
+            <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+        </div>
+        <div class="form-group col-md-6">
+            <label for="inputPassword4" class="col-form-label">Password</label>
+            <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="inputAddress" class="col-form-label">Address</label>
+        <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+    </div>
+    <div class="form-group">
+        <label for="inputAddress2" class="col-form-label">Address 2</label>
+        <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+    </div>
+    <div class="form-row">
+        <div class="form-group col-md-6">
+            <label for="inputCity" class="col-form-label">City</label>
+            <input type="text" class="form-control" id="inputCity">
+        </div>
+        <div class="form-group col-md-4">
+            <label for="inputState" class="col-form-label">State</label>
+            <select id="inputState" class="form-control">Choose</select>
+        </div>
+        <div class="form-group col-md-2">
+            <label for="inputZip" class="col-form-label">Zip</label>
+            <input type="text" class="form-control" id="inputZip">
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="form-check">
+            <label class="form-check-label">
+                <input class="form-check-input" type="checkbox"> Check me out
+            </label>
+        </div>
+    </div>
+    <button type="submit" class="btn btn-primary">Sign in</button>
+</form>
+
+<!--Размер столбца
+Как показано в предыдущих примерах, наша сетчатая система позволяет вам помещать
+любое количество .cols в пределах .rowили .form-row. Они будут разделять доступную
+ширину поровну между ними. Вы также можете выбрать подмножество своих столбцов,
+чтобы заняться большим или меньшим пространством, в то время как остальные
+ .cols одинаково разделяли остальные, с определенными классами столбцов .col-7.-->
+<form>
+    <div class="form-row">
+        <div class="col-7">
+            <input type="text" class="form-control" placeholder="City">
+        </div>
+        <div class="col">
+            <input type="text" class="form-control" placeholder="State">
+        </div>
+        <div class="col">
+            <input type="text" class="form-control" placeholder="Zip">
+        </div>
+    </div>
+</form>
+
+<!--Встроенные формы
+Используйте .form-inlineкласс для отображения серии меток, элементов управления формами и кнопок в одной горизонтальной строке. Элементы управления формой внутри встроенных форм немного отличаются от их состояний по умолчанию.
+
+Элементы управления display: flex, сворачивают любое пустое пространство HTML и позволяют вам осуществлять управление выравниванием с помощью утилит spacing и flexbox .
+Элементы управления и группы ввода получают width: autoпереопределение значения по умолчанию для Bootstrap width: 100%.
+Элементы управления отображаются только в видовых экранах шириной не менее 576 пикселей для учета узких видовых экранов на мобильных устройствах.
+Возможно, вам придется вручную задать ширину и выравнивание отдельных элементов формы с помощью утилит для интервалов (как показано ниже). Наконец, обязательно <label>включите элемент с каждым элементом управления формой, даже если вам
+ нужно скрыть его от посетителей, не являющихся разработчиками экранов .sr-only.-->
+<form class="form-inline">
+    <label class="sr-only" for="inlineFormInputName2">Name</label>
+    <input type="text" class="form-control mb-2 mr-sm-2 mb-sm-0" id="inlineFormInputName2" placeholder="Jane Doe">
+
+    <label class="sr-only" for="inlineFormInputGroupUsername2">Username</label>
+    <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+        <div class="input-group-addon">@</div>
+        <input type="text" class="form-control" id="inlineFormInputGroupUsername2" placeholder="Username">
+    </div>
+
+    <div class="form-check mb-2 mr-sm-2 mb-sm-0">
+        <label class="form-check-label">
+            <input class="form-check-input" type="checkbox"> Remember me
+        </label>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+<!--Текст справки
+Текст справки на уровне блока может быть создан с использованием .form-text(ранее известный как .help-blockv3).
+ Встроенный текст справки может быть гибко реализован
+ с использованием любых встроенных HTML-элементов и классов полезности .text-muted.
+ Текст справки, приведенный ниже, может быть в стиле .form-text. Этот класс включает в себя display: blockи
+  добавляет некоторый верхний предел для легкого расстояния от введенных выше входов.-->
+<label for="inputPassword5">Password</label>
+<input type="password" id="inputPassword5" class="form-control" aria-describedby="passwordHelpBlock">
+<small id="passwordHelpBlock" class="form-text text-muted">
+    Your password must be 8-20 characters long, contain letters and numbers, and must not contain spaces, special characters, or emoji.
+</small>
+<!--Инлайн текст может использовать любой типичный встроенный HTML - элемент (будь то <small>, <span>или что - то другое)
+ с не более чем полезности класса.-->
+<form class="form-inline">
+    <div class="form-group">
+        <label for="inputPassword6">Password</label>
+        <input type="password" id="inputPassword6" class="form-control mx-sm-3" aria-describedby="passwordHelpInline">
+        <small id="passwordHelpInline" class="text-muted">
+            Must be 8-20 characters long.
+        </small>
+    </div>
+</form>
+<!--Отключенные формы
+Добавьте disabledлогический атрибут на вход,
+чтобы предотвратить взаимодействие пользователя и сделать его более легким.-->
+
+<!--Добавьте disabledатрибут в a,
+ <fieldset>чтобы отключить все элементы управления внутри.-->
+<form>
+    <fieldset disabled>
+        <div class="form-group">
+            <label for="disabledTextInput">Disabled input</label>
+            <input type="text" id="disabledTextInput" class="form-control" placeholder="Disabled input">
+        </div>
+        <div class="form-group">
+            <label for="disabledSelect">Disabled select menu</label>
+            <select id="disabledSelect" class="form-control">
+                <option>Disabled select</option>
+            </select>
+        </div>
+        <div class="checkbox">
+            <label>
+                <input type="checkbox"> Can't check this
+            </label>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </fieldset>
+</form>
+
+
+<!--Как это работает
+Вот как работает проверка формы с помощью Bootstrap:
+
+Проверка HTML-формы применяется с помощью двух псевдоклассов CSS :invalidи :valid. Это относится и к <input>, <select>и <textarea>элементы.
+Bootstrap привязывает стили :invalidи :validстили к родительскому .was-validatedклассу, обычно применяемому к <form>. В противном случае любое обязательное поле без значения отображается как недопустимое при загрузке страницы. Таким образом, вы можете выбрать, когда их активировать (обычно после попытки отправки формы).
+В качестве резервной копии .is-invalidи .is-validклассы могут использоваться вместо псевдоклассов для проверки на стороне сервера . Они не требуют .was-validatedродительского класса.
+Из-за ограничений в работе CSS мы не можем (в настоящее время) применять стили к тому, <label>что есть перед элементом управления формой в DOM без помощи пользовательского JavaScript.
+Все современные браузеры поддерживают API проверки ограничений , ряд методов JavaScript для проверки элементов формы.
+В сообщениях обратной связи могут использоваться значения по умолчанию для браузера (разные для каждого браузера и неустойчивые с помощью CSS) или наши пользовательские стили обратной связи с дополнительными HTML и CSS.
+Вы можете предоставлять пользовательские сообщения о допустимости с помощью setCustomValidityJavaScript.
+Имея это в виду, рассмотрите следующие демонстрации для наших стилей проверки пользовательской формы, дополнительных классов на стороне сервера и параметров браузера по умолчанию.
+
+Пользовательские стили
+Для пользовательских сообщений проверки формы бутстрапа вам нужно добавить novalidateлогический атрибут к вашему <form>. Это отключает подсказки обратной связи по умолчанию для браузера, но по-прежнему предоставляет доступ к API-интерфейсам проверки формы в JavaScript. Попробуйте представить форму ниже; наш JavaScript перехватит кнопку отправки и релейную обратную связь к вам.
+
+При попытке отправить вы увидите стили :invalidи :validстили, применяемые к элементам управления формы.-->
+<form class="container" id="needs-validation" novalidate>
+    <div class="row">
+        <div class="col-md-6 mb-3">
+            <label for="validationCustom01">First name</label>
+            <input type="text" class="form-control" id="validationCustom01" placeholder="First name" value="Mark" required>
+        </div>
+        <div class="col-md-6 mb-3">
+            <label for="validationCustom02">Last name</label>
+            <input type="text" class="form-control" id="validationCustom02" placeholder="Last name" value="Otto" required>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6 mb-3">
+            <label for="validationCustom03">City</label>
+            <input type="text" class="form-control" id="validationCustom03" placeholder="City" required>
+            <div class="invalid-feedback">
+                Please provide a valid city.
+            </div>
+        </div>
+        <div class="col-md-3 mb-3">
+            <label for="validationCustom04">State</label>
+            <input type="text" class="form-control" id="validationCustom04" placeholder="State" required>
+            <div class="invalid-feedback">
+                Please provide a valid state.
+            </div>
+        </div>
+        <div class="col-md-3 mb-3">
+            <label for="validationCustom05">Zip</label>
+            <input type="text" class="form-control" id="validationCustom05" placeholder="Zip" required>
+            <div class="invalid-feedback">
+                Please provide a valid zip.
+            </div>
+        </div>
+    </div>
+    <button class="btn btn-primary" type="submit">Submit form</button>
+</form>
+
+<script>
+    // Пример стартового JavaScript для отключения представлений форм, если есть недопустимые поля
+    (function() {
+        "use strict";
+        window.addEventListener("load", function() {
+            var form = document.getElementById("needs-validation");
+            form.addEventListener("submit", function(event) {
+                if (form.checkValidity() == false) {
+                    event.preventDefault();
+                    event.stopPropagation();
+                }
+                form.classList.add("was-validated");
+            }, false);
+        }, false);
+    }());
+</script>
+
+<!--Настройки по умолчанию для браузера
+Не интересуетесь пользовательскими сообщениями обратной связи с проверкой или написанием JavaScript для изменения формы поведения? Все хорошо, вы можете использовать настройки браузера по умолчанию. Попробуйте представить форму ниже. В зависимости от вашего браузера и ОС вы увидите несколько иной стиль обратной связи.
+
+Хотя эти стили обратной связи не могут быть стилизованы с помощью CSS, вы все равно можете настроить текст обратной связи с помощью JavaScript.-->
+<form>
+    <div class="row">
+        <div class="col-md-6 mb-3">
+            <label for="validationDefault01">First name</label>
+            <input type="text" class="form-control" id="validationDefault01" placeholder="First name" value="Mark" required>
+        </div>
+        <div class="col-md-6 mb-3">
+            <label for="validationDefault02">Last name</label>
+            <input type="text" class="form-control" id="validationDefault02" placeholder="Last name" value="Otto" required>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6 mb-3">
+            <label for="validationDefault03">City</label>
+            <input type="text" class="form-control" id="validationDefault03" placeholder="City" required>
+            <div class="invalid-feedback">
+                Please provide a valid city.
+            </div>
+        </div>
+        <div class="col-md-3 mb-3">
+            <label for="validationDefault04">State</label>
+            <input type="text" class="form-control" id="validationDefault04" placeholder="State" required>
+            <div class="invalid-feedback">
+                Please provide a valid state.
+            </div>
+        </div>
+        <div class="col-md-3 mb-3">
+            <label for="validationDefault05">Zip</label>
+            <input type="text" class="form-control" id="validationDefault05" placeholder="Zip" required>
+            <div class="invalid-feedback">
+                Please provide a valid zip.
+            </div>
+        </div>
+    </div>
+
+    <button class="btn btn-primary" type="submit">Submit form</button>
+</form>
+
+<!--Серверная сторона
+Мы рекомендуем использовать проверку на стороне клиента,
+ но если вам нужна серверная сторона, вы можете указать недопустимые и
+ действительные поля формы с .is-invalidи .is-valid. Обратите внимание,
+ что .invalid-feedbackэто также поддерживается этими классами.-->
+<form>
+    <div class="row">
+        <div class="col-md-6 mb-3">
+            <label for="validationServer01">First name</label>
+            <input type="text" class="form-control is-valid" id="validationServer01" placeholder="First name" value="Mark" required>
+        </div>
+        <div class="col-md-6 mb-3">
+            <label for="validationServer02">Last name</label>
+            <input type="text" class="form-control is-valid" id="validationServer02" placeholder="Last name" value="Otto" required>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6 mb-3">
+            <label for="validationServer03">City</label>
+            <input type="text" class="form-control is-invalid" id="validationServer03" placeholder="City" required>
+            <div class="invalid-feedback">
+                Please provide a valid city.
+            </div>
+        </div>
+        <div class="col-md-3 mb-3">
+            <label for="validationServer04">State</label>
+            <input type="text" class="form-control is-invalid" id="validationServer04" placeholder="State" required>
+            <div class="invalid-feedback">
+                Please provide a valid state.
+            </div>
+        </div>
+        <div class="col-md-3 mb-3">
+            <label for="validationServer05">Zip</label>
+            <input type="text" class="form-control is-invalid" id="validationServer05" placeholder="Zip" required>
+            <div class="invalid-feedback">
+                Please provide a valid zip.
+            </div>
+        </div>
+    </div>
+
+    <button class="btn btn-primary" type="submit">Submit form</button>
+</form>
+<!--Поддерживаемые элементы
+В наших примерах отображаются собственные текстовые выражения <input>s,
+ но стили проверки формы также доступны для наших пользовательских форм.-->
+<form class="was-validated">
+    <label class="custom-control custom-checkbox">
+        <input type="checkbox" class="custom-control-input" required>
+        <span class="custom-control-indicator"></span>
+        <span class="custom-control-description">Check this custom checkbox</span>
+    </label>
+
+    <div class="custom-controls-stacked d-block my-3">
+        <label class="custom-control custom-radio">
+            <input id="radioStacked1" name="radio-stacked" type="radio" class="custom-control-input" required>
+            <span class="custom-control-indicator"></span>
+            <span class="custom-control-description">Toggle this custom radio</span>
+        </label>
+        <label class="custom-control custom-radio">
+            <input id="radioStacked2" name="radio-stacked" type="radio" class="custom-control-input" required>
+            <span class="custom-control-indicator"></span>
+            <span class="custom-control-description">Or toggle this other custom radio</span>
+        </label>
+    </div>
+
+    <select class="custom-select d-block my-3" required>
+        <option value="">Open this select menu</option>
+        <option value="1">One</option>
+        <option value="2">Two</option>
+        <option value="3">Three</option>
+    </select>
+
+    <label class="custom-file">
+        <input type="file" id="file" class="custom-file-input" required>
+        <span class="custom-file-control"></span>
+    </label>
+</form>
+
+
+<!--Флажки и радиоприемники
+Каждый флажок и радио завертываются <label>по трем причинам:
+
+Он обеспечивает более крупные области для проверки контроля.
+Он предоставляет полезную и семантическую оболочку, помогающую нам заменить значения по умолчанию <input>s.
+Он запускает состояние <input>автоматически, то есть не требуется JavaScript.
+Мы прячемся по умолчанию <input>с opacityи использовать .custom-control-indicatorдля создания нового индикатора пользовательской формы на своем месте. К сожалению, мы не можем создать пользовательский вариант только из-за того, <input>что CSS contentне работает над этим элементом.
+
+Мы используем селектор sibling ( ~) для всех наших <input>состояний, например, для :checkedправильного отображения нашего индикатора пользовательской формы. В сочетании с .custom-control-descriptionклассом мы можем также стилизовать текст для каждого элемента на основе <input>состояния s.
+
+В проверенных состояниях мы используем значки SVG с поддержкой base64 из Open Iconic . Это дает нам лучший контроль над стилем и позиционированием в браузерах и устройствах.
+
+Флажки-->
+<label class="custom-control custom-checkbox">
+    <input type="checkbox" class="custom-control-input">
+    <span class="custom-control-indicator"></span>
+    <span class="custom-control-description">Check this custom checkbox</span>
+</label>
+
+<!--Радиоприемники-->
+<label class="custom-control custom-radio">
+    <input id="radio1" name="radio" type="radio" class="custom-control-input">
+    <span class="custom-control-indicator"></span>
+    <span class="custom-control-description">Toggle this custom radio</span>
+</label>
+<label class="custom-control custom-radio">
+    <input id="radio2" name="radio" type="radio" class="custom-control-input">
+    <span class="custom-control-indicator"></span>
+    <span class="custom-control-description">Or toggle this other custom radio</span>
+</label>
+
+<!--Выберите меню
+Пользовательским <select>меню нужен только собственный класс, .custom-selectчтобы
+ запускать пользовательские стили.-->
+<select class="custom-select">
+    <option selected>Open this select menu</option>
+    <option value="1">One</option>
+    <option value="2">Two</option>
+    <option value="3">Three</option>
+</select>
+
+<!--Браузер файлов
+Ввод файла является самым суровым из группы и требует дополнительного JavaScript,
+ если вы хотите связать
+ их с функциональным выбором файла ... и выбранного файла имени файла.-->
+<label class="custom-file">
+    <input type="file" id="file2" class="custom-file-input">
+    <span class="custom-file-control"></span>
+</label>
+</body>
+</html>
