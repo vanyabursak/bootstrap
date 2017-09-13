@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>badges</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css" >
+
+</head>
+<body>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
+
+<!--пример
+Значки масштабируются в соответствии с размером исходного родительского элемента,
+ используя относительный размер шрифта и emединицы измерения.-->
+<h1>Example heading <span class="badge badge-secondary">svasdvadv</span></h1>
+<h2>Example heading <span class="badge badge-secondary">New</span></h2>
+<h3>Example heading <span class="badge badge-secondary">New</span></h3>
+<h4>Example heading <span class="badge badge-secondary">New</span></h4>
+<h5>Example heading <span class="badge badge-secondary">New</span></h5>
+<h6>Example heading <span class="badge badge-secondary">New</span></h6>
+
+<!--Значки могут использоваться как часть ссылок или кнопок для создания счетчика.-->
+<button class="btn">
+    Notifications <span class="badge badge-secondary">4</span>
+</button>
+
+<!--Обратите внимание, что в зависимости от того, как они используются,
+значки могут вводить в заблуждение пользователей устройств чтения с экрана и аналогичных вспомогательных технологий. В то время как стилизация значков
+ дает визуальную подсказку в отношении их цели, эти пользователи просто будут
+представлены содержимым значка. В зависимости от конкретной ситуации эти значки
+ могут казаться случайными дополнительными словами или цифрами в конце предложения,
+  ссылки или кнопки. Если контекст не ясен (как в примере «Уведомления», где, возможно, понятно, что «4» дает количество количества уведомлений), подумайте о включении дополнительного контекста, например,
+   используя визуально скрытый фрагмент дополнительного текста.
+-->
+<button class="btn">
+    Profile <span class="badge badge-secondary">9</span>
+    <span class="sr-only">unread messages</span>
+</button>
+
+
+<!--Контекстные вариации
+Добавьте любой из указанных ниже классов модификаторов, чтобы изменить внешний вид значка.-->
+<span class="badge badge-primary">Primary</span>
+<span class="badge badge-secondary">Secondary</span>
+<span class="badge badge-success">Success</span>
+<span class="badge badge-danger">Danger</span>
+<span class="badge badge-warning">Warning</span>
+<span class="badge badge-info">Info</span>
+<span class="badge badge-light">Light</span>
+<span class="badge badge-dark">Dark</span>
+
+<!--Значки пилюли
+Используйте .badge-pillкласс модификатора, чтобы сделать значки более округлыми (с большей border-radiusи дополнительной горизонталью padding). Полезно, если вы пропустите значки от v3.-->
+<span class="badge badge-pill badge-primary">Primary</span>
+<span class="badge badge-pill badge-secondary">Secondary</span>
+<span class="badge badge-pill badge-success">Success</span>
+<span class="badge badge-pill badge-danger">Danger</span>
+<span class="badge badge-pill badge-warning">Warning</span>
+<span class="badge badge-pill badge-info">Info</span>
+<span class="badge badge-pill badge-light">Light</span>
+<span class="badge badge-pill badge-dark">Dark</span>
+
+<!--связи
+Использование .badgeклассов с <a>элементом быстро обеспечивает действительные
+ значки с зависанием и состояниями фокусировки.-->
+<a href="#" class="badge badge-primary">Primary</a>
+<a href="#" class="badge badge-secondary">Secondary</a>
+<a href="#" class="badge badge-success">Success</a>
+<a href="#" class="badge badge-danger">Danger</a>
+<a href="#" class="badge badge-warning">Warning</a>
+<a href="#" class="badge badge-info">Info</a>
+<a href="#" class="badge badge-light">Light</a>
+<a href="#" class="badge badge-dark">Dark</a>
+
+              <!--Text-->
+<!--Выравнивание текста
+Легко перестраивать текст для компонентов с помощью классов выравнивания текста.-->
+<p class="text-justify">Ambitioni dedisse scripsisse iudicaretur.
+    Cras mattis iudicium purus sit amet fermentum. Donec sed odio operae, eu vulputate felis rhoncus. Praeterea iter est quasdam res quas ex communi. At nos hinc posthac, sitientis piros Afros. Petierunt uti sibi concilium totius Galliae in diem certam indicere.
+    Cras mattis iudicium purus sit amet fermentum.</p>
+
+<!--Для выравнивания влево, вправо и в центре доступны доступные классы,
+ которые используют одни и те же точки обзора ширины в виде сетки.-->
+<p class="text-left">Left aligned text on all viewport sizes.</p>
+<p class="text-center">Center aligned text on all viewport sizes.</p>
+<p class="text-right">Right aligned text on all viewport sizes.</p>
+
+<p class="text-sm-left">Left aligned text on viewports sized SM (small) or wider.</p>
+<p class="text-md-left">Left aligned text on viewports sized MD (medium) or wider.</p>
+<p class="text-lg-left">Left aligned text on viewports sized LG (large) or wider.</p>
+<p class="text-xl-left">Left aligned text on viewports sized XL (extra-large) or wider.</p>
+
+<!--Обтекание и переполнение текста
+Запретить перенос текста с помощью .text-nowrapкласса.-->
+<div class="row">
+    <div class="col-1 text-nowrap">
+        Curabitur blandit tempus ardua ridiculus sed magna.
+    </div>
+    <div class="col-11">
+        <img src="..." alt="An image to show the text doesn't wrap">
+    </div>
+</div>
+
+<!--Для более длительного содержимого вы можете добавить .text-truncateкласс для усечения текста с помощью многоточия. Требуется display: inline-blockили display: block.-->
+<!-- Block level -->
+<div class="row">
+    <div class="col-2 text-truncate">
+        Praeterea iter est quasdam res quas ex communi.
+    </div>
+</div>
+
+<!-- Inline level -->
+<span class="d-inline-block text-truncate" style="max-width: 150px;">
+  Praeterea iter est quasdam res quas ex communi.
+</span>
+
+<!--Текстовое преобразование
+Преобразование текста в компоненты с классами капитализации текста.-->
+<p class="text-lowercase">Lowercased text.</p>
+<p class="text-uppercase">Uppercased text.</p>
+<p class="text-capitalize">CapiTaliZed text.</p>
+<!--Обратите внимание, как text-capitalizeтолько изменяется первая буква каждого слова, оставляя случай любых других букв незатронутыми.-->
+
+
+<!--Вес шрифта и курсив
+Быстрое изменение веса (смелости) текста или выделение курсивом текста.-->
+<p class="font-weight-bold">Bold text.</p>
+<p class="font-weight-normal">Normal weight text.</p>
+<p class="font-italic">Italic text.</p>
+</body>
+</html>

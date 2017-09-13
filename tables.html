@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>tables</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css" >
+</head>
+<body>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
+<!--Контроль формы
+<!--Используя самую основную разметку таблицы, вот как .tableвыглядят таблицы с базой данных в Bootstrap. Все стили таблиц наследуются в Bootstrap 4 ,
+ то есть любые вложенные таблицы будут создаваться так же, как и родительский.-->
+<table class="table">
+    <thead>
+    <tr>
+        <th>#</th>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Username</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <th scope="row">1</th>
+        <td>Mark</td>
+        <td>Otto</td>
+        <td>@mdo</td>
+    </tr>
+    <tr>
+        <th scope="row">2</th>
+        <td>Jacob</td>
+        <td>Thornton</td>
+        <td>@fat</td>
+    </tr>
+    <tr>
+        <th scope="row">3</th>
+        <td>Larry</td>
+        <td>the Bird</td>
+        <td>@twitter</td>
+    </tr>
+    </tbody>
+</table>
+
+
+<!--Вы также можете инвертировать цвета - с легким текстом на темном фоне -->
+<table class="table table-inverse">
+    <thead>
+    <tr>
+        <th>#</th>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Username</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <th scope="row">1</th>
+        <td>Mark</td>
+        <td>Otto</td>
+        <td>@mdo</td>
+    </tr>
+    <tr>
+        <th scope="row">2</th>
+        <td>Jacob</td>
+        <td>Thornton</td>
+        <td>@fat</td>
+    </tr>
+    <tr>
+        <th scope="row">3</th>
+        <td>Larry</td>
+        <td>the Bird</td>
+        <td>@twitter</td>
+    </tr>
+    </tbody>
+</table>
+
+
+<!--Опции таблицы
+Подобно стандартным и обратным таблицам, используйте один из двух классов-модификаторов,
+ чтобы они <thead>казались светлыми или темно-серыми.-->
+<table class="table">
+    <thead class="thead-inverse">
+    <tr>
+        <th>#</th>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Username</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <th scope="row">1</th>
+        <td>Mark</td>
+        <td>Otto</td>
+        <td>@mdo</td>
+    </tr>
+    <tr>
+        <th scope="row">2</th>
+        <td>Jacob</td>
+        <td>Thornton</td>
+        <td>@fat</td>
+    </tr>
+    <tr>
+        <th scope="row">3</th>
+        <td>Larry</td>
+        <td>the Bird</td>
+        <td>@twitter</td>
+    </tr>
+    </tbody>
+</table>
+
+<table class="table">
+    <thead class="thead-default">
+    <tr>
+        <th>#</th>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Username</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <th scope="row">1</th>
+        <td>Mark</td>
+        <td>Otto</td>
+        <td>@mdo</td>
+    </tr>
+    <tr>
+        <th scope="row">2</th>
+        <td>Jacob</td>
+        <td>Thornton</td>
+        <td>@fat</td>
+    </tr>
+    <tr>
+        <th scope="row">3</th>
+        <td>Larry</td>
+        <td>the Bird</td>
+        <td>@twitter</td>
+    </tr>
+    </tbody>
+</table>
+
+
+<!--Полосатые ряды
+Используйте, .table-stripedчтобы добавить чередование зебры в любую строку таблицы внутри <tbody>.-->
+<table class="table table-striped">
+    <thead>
+    <tr>
+        <th>#</th>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Username</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <th scope="row">1</th>
+        <td>Mark</td>
+        <td>Otto</td>
+        <td>@mdo</td>
+    </tr>
+    <tr>
+        <th scope="row">2</th>
+        <td>Jacob</td>
+        <td>Thornton</td>
+        <td>@fat</td>
+    </tr>
+    <tr>
+        <th scope="row">3</th>
+        <td>Larry</td>
+        <td>the Bird</td>
+        <td>@twitter</td>
+    </tr>
+    </tbody>
+</table>
+
+
+<!--Граничный стол
+Добавить .table-borderedдля границ со всех сторон таблицы и ячеек.-->
+<table class="table table-bordered">
+    <thead>
+    <tr>
+        <th>#</th>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Username</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <th scope="row">1</th>
+        <td>Mark</td>
+        <td>Otto</td>
+        <td>@mdo</td>
+    </tr>
+    <tr>
+        <th scope="row">2</th>
+        <td>Mark</td>
+        <td>Otto</td>
+        <td>@TwBootstrap</td>
+    </tr>
+    <tr>
+        <th scope="row">3</th>
+        <td>Jacob</td>
+        <td>Thornton</td>
+        <td>@fat</td>
+    </tr>
+    <tr>
+        <th scope="row">4</th>
+        <td colspan="2">Larry the Bird</td>
+        <td>@twitter</td>
+    </tr>
+    </tbody>
+</table>
+
+
+<!--Положимые строки
+Добавить, .table-hoverчтобы включить состояние зависания в строках таблицы внутри <tbody>.-->
+<table class="table table-hover">
+    <thead>
+    <tr>
+        <th>#</th>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Username</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <th scope="row">1</th>
+        <td>Mark</td>
+        <td>Otto</td>
+        <td>@mdo</td>
+    </tr>
+    <tr>
+        <th scope="row">2</th>
+        <td>Jacob</td>
+        <td>Thornton</td>
+        <td>@fat</td>
+    </tr>
+    <tr>
+        <th scope="row">3</th>
+        <td colspan="2">Larry the Bird</td>
+        <td>@twitter</td>
+    </tr>
+    </tbody>
+</table>
+
+
+<!--Контекстные классы
+Используйте контекстные классы для цветных строк таблицы или отдельных ячеек.-->
+<!-- On rows -->
+<tr class="table-active">...</tr>
+
+<tr class="table-primary">...</tr>
+<tr class="table-secondary">...</tr>
+<tr class="table-success">...</tr>
+<tr class="table-danger">...</tr>
+<tr class="table-warning">...</tr>
+<tr class="table-info">...</tr>
+<tr class="table-light">...</tr>
+<tr class="table-dark">...</tr>
+
+<!-- On cells (`td` or `th`) -->
+<tr>
+    <td class="table-active">...</td>
+
+    <td class="table-primary">...</td>
+    <td class="table-secondary">...</td>
+    <td class="table-success">...</td>
+    <td class="table-danger">...</td>
+    <td class="table-warning">...</td>
+    <td class="table-info">...</td>
+    <td class="table-light">...</td>
+    <td class="table-dark">...</td>
+</tr>
+
+
+<!--Реагирующие таблицы
+Создавайте гибкие таблицы, добавляя их .table-responsiveк любому, .tableчтобы они прокручивались по горизонтали на небольших устройствах (до 768 пикселей). При просмотре на большом, чем 768 пикселей, вы не увидите различий в этих таблицах.
+
+Вертикальное обрезание / усечение
+Используются адаптивные таблицы overflow-y: hidden, которые снимают с любого содержимого, выходящего за нижний или верхний края таблицы. В частности, это может снимать выпадающие меню и другие сторонние виджеты.-->
+<table class="table table-responsive">
+    ...
+</table>
+
+</body>
+</html>

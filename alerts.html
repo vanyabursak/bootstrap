@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>alerts</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css" >
+
+</head>
+<body>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
+
+<!--Оповещения
+Предоставляйте контекстные сообщения обратной связи для типичных действий пользователя
+с помощью нескольких доступных и гибких предупреждающих сообщений.-->
+<!--Примеры
+Оповещения доступны для любой длины текста, а также для дополнительной кнопки увольнения. Для правильного стиля используйте один из четырех необходимых контекстуальных классов (например, .alert-success).
+ Для встроенного увольнения используйте плагин jQuery предупреждений .-->
+<div class="alert alert-primary" role="alert">
+    This is a primary alert—check it out!
+</div>
+<div class="alert alert-secondary" role="alert">
+    This is a secondary alert—check it out!
+</div>
+<div class="alert alert-success" role="alert">
+    This is a success alert—check it out!
+</div>
+<div class="alert alert-danger" role="alert">
+    This is a danger alert—check it out!
+</div>
+<div class="alert alert-warning" role="alert">
+    This is a warning alert—check it out!
+</div>
+<div class="alert alert-info" role="alert">
+    This is a info alert—check it out!
+</div>
+<div class="alert alert-light" role="alert">
+    This is a light alert—check it out!
+</div>
+<div class="alert alert-dark" role="alert">
+    This is a dark alert—check it out!
+</div>
+
+
+<!--Передача смысла вспомогательным технологиям
+Использование цвета для добавления значения только обеспечивает визуальную индикацию, которая не будет передаваться пользователям вспомогательных технологий - таких как устройства чтения с экрана. Убедитесь, что информация, обозначенная цветом, либо очевидна из самого содержимого (например, видимого текста), либо включена с помощью альтернативных средств, таких как дополнительный текст, скрытый с .sr-onlyклассом.
+Цвет ссылки
+Используйте .alert-linkкласс утилиты, чтобы быстро обеспечить соответствие цветных ссылок в любом предупреждении.-->
+<div class="alert alert-primary" role="alert">
+    This is a primary alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
+</div>
+<div class="alert alert-secondary" role="alert">
+    This is a secondary alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
+</div>
+<div class="alert alert-success" role="alert">
+    This is a success alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
+</div>
+<div class="alert alert-danger" role="alert">
+    This is a danger alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
+</div>
+<div class="alert alert-warning" role="alert">
+    This is a warning alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
+</div>
+<div class="alert alert-info" role="alert">
+    This is a info alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
+</div>
+<div class="alert alert-light" role="alert">
+    This is a light alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
+</div>
+<div class="alert alert-dark" role="alert">
+    This is a dark alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
+</div>
+
+
+<!--Дополнительный контент
+Оповещения могут также содержать дополнительные элементы HTML, такие как заголовки, абзацы и разделители.-->
+<div class="alert alert-success" role="alert">
+    <h4 class="alert-heading">Well done!</h4>
+    <p>Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.</p>
+    <hr>
+    <p class="mb-0">Whenever you need to, be sure to use margin utilities to keep things nice and tidy.</p>
+</div>
+
+
+<!--Отклонив
+Используя плагин JavaScript оповещения, можно отключить любую встроенную тревогу. Вот как:
+
+Убедитесь, что вы загрузили плагин предупреждений или скомпилированный JavaScript Bootstrap.
+Добавьте кнопку увольнения и .alert-dismissibleкласс, который добавляет дополнительное дополнение справа от предупреждения и позиционирует .closeкнопку.
+На кнопке «Отмена» добавьте data-dismiss="alert"атрибут, который запускает функции JavaScript. Обязательно используйте <button>элемент с ним для правильного поведения на всех устройствах.
+Чтобы анимировать предупреждения при их увольнении, обязательно добавьте классы .fadeи .showклассы.
+Вы можете увидеть это в действии с живой демонстрацией:-->
+<div class="alert alert-warning alert-dismissible fade show" role="alert">
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+    </button>
+    <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+</div>
+</body>
+</html>
